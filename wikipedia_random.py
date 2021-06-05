@@ -1,18 +1,25 @@
 from bs4 import BeautifulSoup
 import requests
+from colorama import Fore, init
 
-res = requests.get("https://en.wikipedia.org/wiki/Special:Random")
-res.raise_for_status()
+init()
 
-wiki = BeautifulSoup(res.text, "html.parser")
+try:
+    res = requests.get("https://en.wikipedia.org/wiki/Special:Random")
+    res.raise_for_status()
 
-r = open("random_wiki.txt", "w+", encoding='utf-8')
+    wiki = BeautifulSoup(res.text, "html.parser")
 
-heading = wiki.find("h1").text
+    r = open("random_wiki.txt", "w+", encoding='utf-8')
 
-r.write(heading + "\n")
-for i in wiki.select("p"):
-    r.write(i.getText())
+    heading = wiki.find("h1").text
 
-r.close()
-print("Fichier enregistré sous le nom de random_wiki.txt")
+    r.write(heading + "\n")
+    for i in wiki.select("p"):
+        r.write(i.getText())
+
+    r.close()
+
+    print(Fore.GREN + "Fichier enregistré sous le nom de random_wiki.txt")
+except:
+    print(Fore.RED + "Erreur dans la création du fichier.")
