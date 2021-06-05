@@ -13,4 +13,4 @@ __Dépendences :__
 
 🎫 Mon Discord: Gabin#7955
 
-!![wikipedia_random_article](https://user-images.githubusercontent.com/79531012/120899407-dc7eeb80-c62f-11eb-989f-0d692cdc6b34.png)
+![wikipedia_random_article](https://user-images.githubusercontent.com/79531012/120899407-dc7eeb80-c62f-11eb-989f-0d692cdc6b34.png)
