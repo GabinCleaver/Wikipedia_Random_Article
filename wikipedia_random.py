@@ -20,6 +20,6 @@ try:
 
     r.close()
 
-    print(Fore.GREN + "Fichier enregistré sous le nom de random_wiki.txt")
+    print(Fore.GREEN + "Fichier enregistré sous le nom de random_wiki.txt")
 except:
     print(Fore.RED + "Erreur dans la création du fichier.")
