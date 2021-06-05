@@ -9,6 +9,8 @@ __Dépendences :__
 ```pip install htmlparser```
 ```pip install beautifulsoup4```
 
+(Le resultat est en anglais)
+
 💖 Enjoy
 
 🎫 Mon Discord: Gabin#7955
