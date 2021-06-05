@@ -8,6 +8,7 @@ __Dépendences :__
 
 ```pip install htmlparser```
 ```pip install beautifulsoup4```
+```pip install colorama```
 
 (Le resultat est en anglais)
 
